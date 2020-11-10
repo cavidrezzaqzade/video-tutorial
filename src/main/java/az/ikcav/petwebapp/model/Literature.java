@@ -11,7 +11,15 @@ public class Literature {
     @Column(name = "littt_id")
     private Long litId;
 
+    //adding column
+    @Column(name = "littt_name")
+    private String litName;
+
     @ManyToOne
     @JoinColumn(name = "fk_book_id")
     public Book book;
+
+
+    public Literature() {
+    }
 }
