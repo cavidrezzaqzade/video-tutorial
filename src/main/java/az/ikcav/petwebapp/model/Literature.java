@@ -1,5 +1,7 @@
 package az.ikcav.petwebapp.model;
 
+import ch.qos.logback.classic.db.names.TableName;
+
 import javax.persistence.*;
 
 @Entity
