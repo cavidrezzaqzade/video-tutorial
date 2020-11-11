@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Entity
 public class Literature {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "littt_id")
     private Long litId;
 
@@ -17,7 +17,7 @@ public class Literature {
 
     @ManyToOne
     @JoinColumn(name = "fk_book_id")
-    public Book book;
+    private Book book;
 
 
     public Literature() {
